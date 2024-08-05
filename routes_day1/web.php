@@ -21,7 +21,7 @@ Route::get('post/2post', function ()
 
 //another Method
 
-//Route::view('post','/post');
+//Route::view('/post','post');
 
 //hide one 
 
