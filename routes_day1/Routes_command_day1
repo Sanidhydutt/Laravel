@@ -1,3 +1,0 @@
-php artisan route -h
-php artisan route:list --except-vendor
-php artisan route:list --path=post
