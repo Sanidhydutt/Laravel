@@ -1,0 +1,8 @@
+Command use ->
+
+
+php artisan make:controller TestingController --invokable
+
+php artisan route:list --except-vendor
+
+php artisan route:list --path=user
