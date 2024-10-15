@@ -1,0 +1,39 @@
+-we user database pass to other user or client so use php artisan migrate to db update
+
+schema - In Laravel, the schema is a class that provides a way to manipulate tables in a database agnostic manner. It works with all databases that Laravel supports and has a unified API across all of these systems. 
+
+up() - The up() method in Laravel is used to add new tables, columns, or indexes to a database. It's part of a migration class, which also contains a down() method that reverses the operations performed by the up() method. 
+
+Blueprint - The Laravel Blueprint function is a code generation tool that creates multiple Laravel components from a single definition: 
+
+Blueprint provides artisan commands to generate multiple Laravel components from a draft file.
+
+Create database -> php artisan make:migration create_student_table
+
+Then Migrate command After Create database then use -> php artisan migrate
+
+check status -> php artisan migrate:status
+
+undo command for migration ->
+{
+    php artisan migrate:rollback
+    php artisan migrate:rollback --step=2
+
+    php artisan migrate:rollback --batch=3
+
+    in batch on like i'll do 10 command but i want change command 3 when  i do this command then it will change command 3 not 1,2,4...10
+}
+
+For Reset ->  php artisan migrate:reset
+
+
+for refresh ->  php artisan migrate:refresh
+(they rollback old tabel then again add tabel)
+
+for refresh other method ->   php artisan migrate:fresh
+(they delete old tabel then again add tabel)
+
+php artisan make:model Task -m
+(This topic include in model)
+
+
