@@ -1,0 +1,3 @@
+for make UPDATE -> php artisan make:migration update_student_table --table=student
+
+then php artisan migrate
