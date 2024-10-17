@@ -18,4 +18,8 @@ class PageController extends Controller
         return view('user',compact('id'));
         // return view('user',['id' => $id]);
     }
+    public function showUserid() 
+    {
+        return view('user');
+    }
 }
