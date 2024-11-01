@@ -12,18 +12,25 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('libraries', function (Blueprint $table) {
-            $table->id();
-
-            $table->unsignedBigInteger('stu_id');
-            $table->foreign('stu_id')
-            ->references('id')
-            ->on('students')
-            ->onUpdate('cascade')
-            ->onDelete('cascade');
-            //set null , restirct 
-            $table->string('book');
-            $table->date('due_date')->nullable();
-            $table->boolean('status');
+            //$table->unsignedBigInteger('stu_id');
+            // $table->foreign('stu_id')
+            // ->references('id')
+            // ->on('students')
+            // ->onUpdate('cascade')
+            // ->onDelete('cascade');
+            //set null , restirct - dont change in foreign table 
+            
+            // run upper one code first then rollback and you can run code also like this down
+            
+            // $table->id();
+            // $table->foreignId('student_id')->constrained()
+            // ->cascadeOnUpdate()
+            // ->cascadeOnDelete();
+            // $table->string('book');
+            // $table->date('due_date')->nullable();
+            // $table->boolean('status');
+            
+            
         });
     }
 
