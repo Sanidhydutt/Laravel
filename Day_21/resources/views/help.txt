@@ -1,0 +1,3 @@
+php artisan make:model student
+php artisan make:seeder StudentSeeder
+php artisan db:seed
