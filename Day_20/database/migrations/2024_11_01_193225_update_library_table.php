@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::table('libraries', function (Blueprint $table)
          {
-            $table->dropForeign(['student_id']);
+            $table->dropConstrainedForeignId(['student_id']);
         });
     }
 
